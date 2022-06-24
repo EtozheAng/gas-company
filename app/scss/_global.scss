@@ -1,0 +1,18 @@
+body {
+  color: $default;
+  font-size: 16px;
+  line-height: 22px;
+  @extend %russo;
+  background-color: #222;
+}
+.container{
+  max-width: 1204px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+.title{
+  @extend %russo;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+}
