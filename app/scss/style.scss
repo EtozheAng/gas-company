@@ -263,30 +263,38 @@
     color: $accent;
     margin-bottom: 35px;
   }
-  &__content-item{
-    display: none;
-  }
-  &__content-item--active{
-    display: block;
+  &__top-item{
+    &:checked{
+      & + .tabs__top-checkbox{
+        background-color: $accent;
+      }
+    }
   }
   &__top{
     text-align: center;
     margin-bottom: 37px;
   }
   &__top-item{
-    display: inline-block;
-    width: 164px;
-    height: 64px;
-    border-radius: 20px;
-    background: rgba(241, 241, 241, 0.2);
-    color: $default;
-    opacity: 0.7;
-    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
-    font-size: 18px;
-    line-height: 22px;
-    padding: 10px 0;
-    margin-left: 24px;
-  }
+    width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      position: absolute;
+    }
+  &__top-checkbox{
+          display: inline-block;
+            width: 164px;
+            height: 64px;
+            border-radius: 20px;
+            background: rgba(241, 241, 241, 0.2);
+            color: $default;
+            opacity: 0.7;
+            text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+            font-size: 18px;
+            line-height: 22px;
+            padding: 10px 0;
+            margin-left: 24px;
+    }
   &__top-item--active{
     background-color: $accent;
     opacity: 1;
