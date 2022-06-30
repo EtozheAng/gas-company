@@ -30,3 +30,14 @@ $accent: #2194FF;
   font-family: 'russo-one', sans-serif;
   font-weight: 400;
 }
+%btn{
+  display: inline-block;
+  border-radius: 50px;
+  background-color: $accent;
+  @extend %open-700;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 8px 35px 10px 33px;
+  color: $default;
+  border: none;
+}
