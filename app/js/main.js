@@ -14,6 +14,20 @@
      $(this).children('.question__answer').slideToggle(400);
    });
 
-   
+   $(".header__content-btn").click(function(){
+     $('html').css('overflow-y','hidden');
+     $('.js-overlay-dilivery').fadeIn();
+     $('.js-overlay-dilivery').addClass('disabled');
+   })
+
+   $('.popup__close').click(function(){
+     $('.js-overlay-dilivery').fadeOut();
+     $('html').css('overflow-y','auto');
+   })
+
+   $('.popup__btn').click(function(){
+     $('.js-overlay-dilivery').fadeOut();
+     $('html').css('overflow-y','auto');
+   })
   });
   

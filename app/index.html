@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>АтлантГаз</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -27,7 +27,7 @@
           <a class="header__top-quest" href="#">Срочный вопрос</a>
         </div>
       </div>
-      <div class="header__content">
+      <main class="header__content">
         <div class="header__content-items">
           <div class="header__content-item">
             <img class="header__content-img" src="images/day.svg" alt="">
@@ -49,9 +49,30 @@
           </p>
         </a>
         <p class="header__contetn-text">Доставка газа всегда по актуальным ценам</p>
+      </main>
+      <div class="overlay js-overlay-dilivery">
+        <div class="popup js-popup-dilivery">
+          <h2 class="popup__title">Доставим газ
+          за 4 часа</h2>
+          <div class="popup__close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23 1L12.25 11.75M1.5 22.5L12.25 11.75M12.25 11.75L1.5 1L23 22.5" stroke="#2194FF" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+          <form class="popup__form" action="#">
+            <input type="text" placeholder="ИМЯ">
+            <input type="tel" placeholder="ТЕЛЕФОН">
+            <button class="popup__btn" type="submit">
+              <img src="images/btn-popup.svg" alt="">
+            </button>
+          </form>
+          <p class="popup__text">Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с условиями политики
+          конфиденциальности</p>
+        </div>
       </div>
     </div>
   </header>
+
   <section class="price">
     <div class="container">
       <h2 class="title price__title">Стоимость газа в ваш газгольдер сегодня</h2>
