@@ -7,6 +7,14 @@
      fade: true,
      cssEase: 'linear',
      dots: true,
+     responsive: [
+       {
+         breakpoint: 1200,
+         settings: {
+           arrows: false
+         }
+       }
+      ]
    });
 
    $('.accordion__question').on('click', function () {
@@ -14,7 +22,7 @@
      $(this).children('.question__answer').slideToggle(400);
    });
 
-   $(".header__content-btn").click(function(){
+   $('.button-click').click(function(){
      $('html').css('overflow-y','hidden');
      $('.js-overlay-dilivery').fadeIn();
      $('.js-overlay-dilivery').addClass('disabled');

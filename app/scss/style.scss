@@ -8,6 +8,9 @@
   background: url(../images/bg.png);
   background-repeat: no-repeat;
   background-position: 833px 112px;
+  &__redone{
+    background: none;
+  }
         &__top{
     display: flex;
     justify-content: space-between;
@@ -100,9 +103,9 @@
     p{
       position: absolute;
       width: 280px;
-      top: 15px;
+      top: 50%;
       right: 50%;
-      transform: translateX(50%);
+      transform: translate(50%, -50%);
       z-index: 1;
       font-size: 22px;
       line-height: 27px;
@@ -114,6 +117,39 @@
     margin-top: 13px;
     @extend %open-600;
   }
+  &__box{
+    margin: 160px auto;
+    max-width: 695px;
+  }
+  &__box-title{
+    text-align: center;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $accent;
+    margin-bottom: 26px;
+  }
+  &__box-text{
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 51px;
+    text-align: center;
+  }
+  &__btn{
+    position: relative;
+    margin-top: 18px;
+    width: 361px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    img{
+      margin: 0 auto;
+    }
+  }
+  
 }
 .price{
   background: #2C3237;
@@ -208,7 +244,7 @@
     margin-bottom: 40px;
   }
   &__item{
-    width: 380px;
+    width: 360px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -271,6 +307,9 @@
   &__top{
     text-align: center;
     margin-bottom: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   &__top-item{
     width: 1px;
@@ -292,6 +331,7 @@
             line-height: 22px;
             padding: 10px 0;
             margin-left: 24px;
+            margin-bottom: 20px;
     }
   &__top-item--active{
     background-color: $accent;
@@ -345,7 +385,7 @@
     @extend %open-300;
     font-size: 16px;
     line-height: 22px;
-    width: 445px;
+    max-width: 445px;
   }
 }
 .slick-prev,
@@ -381,6 +421,11 @@
     width: 61px;
     height: 18px;
     margin-left: 8px;
+  }
+  li{
+    &:first-child{
+      margin-left: -8px;
+    }
   }
 }
 .slick-active button {
@@ -515,6 +560,7 @@
 }
 .partners{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   &__item{
     display: flex;
@@ -523,6 +569,7 @@
     height: 66px;
     background-color: $default;
     border-radius: 20px;
+    margin: 0 10px 10px 0;
     img{
       margin: 0 auto;
     }
@@ -586,6 +633,7 @@
   &__info{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__privacy,
   &__personal-data{
@@ -594,6 +642,8 @@
     line-height: 19px;
     text-decoration-line: underline;
     color: $default;
+    margin-right: 10px;
+    margin-bottom: 5px;
   }
 }
 .overlay{
