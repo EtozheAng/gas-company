@@ -22,18 +22,18 @@
      $(this).children('.question__answer').slideToggle(400);
    });
 
-   $('.button-click').click(function(){
+   $('.button-click').on('click', function(){
      $('html').css('overflow-y','hidden');
      $('.js-overlay-dilivery').fadeIn();
      $('.js-overlay-dilivery').addClass('disabled');
    })
 
-   $('.popup__close').click(function(){
+   $('.popup__close').on('click', function(){
      $('.js-overlay-dilivery').fadeOut();
      $('html').css('overflow-y','auto');
    })
 
-   $('.popup__btn').click(function(){
+   $('.popup__btn').on('click', function(){
      $('.js-overlay-dilivery').fadeOut();
      $('html').css('overflow-y','auto');
    })

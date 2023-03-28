@@ -1,3 +1,8 @@
+@media (min-width: 1900px){
+  .header{
+    background-position: right 112px;
+  }
+}
 @media (max-width: 1224px){
   .price{
     padding: 26px 0 22px;
@@ -382,6 +387,22 @@
   }
 }
 @media (max-width: 425px){
+  .title{
+    font-size: 20px;
+  }
+  .price{
+    &__item-title {
+      font-size: 22px;
+    }
+    &__item-subtitle{
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__item-button {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
   .partners{
     &__item{
       width: 123px;
@@ -402,6 +423,20 @@
       input{
         margin-bottom: 18px;
       }
+    }
+  }
+  .slider {
+    &__content-text {
+      font-size: 12px;
+    }
+  }
+  .map {
+    &__content-title{
+      font-size: 20px;
+      line-height: 28px;
+    }
+    &__content-subtitle{
+      font-size: 12px;
     }
   }
  }
