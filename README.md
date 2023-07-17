@@ -4,7 +4,7 @@
 
 ## Ссылка на сайт
 
-Вы можете посетить наш сайт по следующей ссылке: https://etozheang.github.io/gas-company-/
+Вы можете посетить наш сайт по следующей ссылке: https://etozheang.github.io/gas-company/
 
 ### Особенности
 
