@@ -1,10 +1,12 @@
 {
-  "name": "testgulp",
+  "name": "gas",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://etozheang.github.io/gas-company-/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Pavel",
   "license": "ISC",
@@ -21,6 +23,11 @@
     "sass": "^1.49.7"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.1",
     "slick-carousel": "^1.8.1"
   }
 }
